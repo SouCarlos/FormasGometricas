@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATICANDO</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img id="imgMenu" src="/imagens/icons8-cardápio.svg"><P id="txtmenu">MENU</P>
+        </div>
+        <div class="barraDeOpcoes">
+            <ul class="listaopcoes">
+                <li class="opcoes">HOME</li>  
+                <li class="opcoes">CONTATOS</li>
+                <li class="opcoes">QUEM SOMOS</li>
+                <li class="opcoes">DEIXE SUA CONTRIBUIÇÃO</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="box-principal">
+            <div class="box-titulo">
+                <h1 class="titulo"><strong>CALCULADORA GEOMETRICA</strong></h1>
+            </div>
+            <div class="box-calculadora">
+                <form action="#" class="inputs">
+                    <p>Selecione a forma geometrica que deseja calcular</p>
+                    <select name="opcoesgeometricas" id="opcoesgeometricas">
+                        <option value="" selected placeholder="forma geometrica"></option>
+                        <option value="0">Triangulo</option>
+                        <option value="1">Circulo</option>
+                        <option value="2">Quadrado</option>
+                        <option value="3">Retangulo</option>
+                    </select>
+                    <P class="txt_Fgeo"> COMPRIMENTO DO QUADRADO</P>
+                    <input type="number" required name="" id="Lfgeo">
+                    <div class="Retangulo">
+                        <p class ="altura_FG">ALTURA DO RETANGULO</p>
+                        <input type="number" required name="" id="Lfgeo2">
+
+                    </div>
+                    <p class="resultado"></p>
+                    <input type= "button" value="CALCULAR" id="bt_calcular" onclick="calcularArea()">
+                </form>
+            </div>            
+        </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script> 
+</body>
+</html>
